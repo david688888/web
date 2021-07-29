@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*styling*/
+
+:root{
+    --Transparentwhite:hsla(0, 0%, 100%, 0.75);
+    --Verylightgray:hsl(0, 0%, 95%);
+    --BrightOrange: hsl(31, 77%, 52%);
+--DarkCyan: hsl(184, 100%, 22%);
+--VeryDarkCyan: hsl(179, 100%, 13%);
+}
+img, h3{
+    margin-bottom: 25px;
+}
+p{
+    margin-bottom: 75px;
+    line-height: 2;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+    color:var(--Transparentwhite) ;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color:var(--Verylightgray);
+}
+h3{
+    font-size: 2em;
+    color: var(--Verylightgray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.card{
+padding: 35px;
+box-sizing: border-box;
+
+}
+#card-container{
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 830px;
+    margin: 100px auto;
+}
+
+.Sedans{
+    background-color:var(--BrightOrange);
+}
+
+.SUVs{
+    background-color: var(--DarkCyan);
+}
+.Luxury{
+    background-color: var(--VeryDarkCyan);
+}
+
+.Sedans button{
+    color: var(--BrightOrange);
+}
+.SUVs button{
+    color:var(--DarkCyan);
+}
+.Luxury button{
+    color:var(--VeryDarkCyan);
+}
+
+button{
+    padding:5px 20px;
+    border-radius: 20px;
+    border:none;
+    box-sizing: border-box;
+    height: 35px;
+    font-family:'Lexend Deca', sans-serif;;
+}
+
+button:active{
+    color:var(--Verylightgray);
+    background-color: transparent;
+    border: 2px solid var(--Verylightgray);
+}
+
+@media screen and (max-width:900px){
+#card-container{
+    width: 82vw;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 50%;
+}
+}
+
+@media screen and (max-width:690px){
+    .card{
+        width: 100%;
+    }
+}
